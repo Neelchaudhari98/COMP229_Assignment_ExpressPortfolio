@@ -1,0 +1,88 @@
+<!-- *********************************   HOME PAGE  *********************************************** -->
+<% if (title == "Home"){ %>
+   <button id="b1" type="button"> About me </button>             <!-- button for move on to aboutme page-->
+   <script type="text/javascript">
+      document.getElementById("b1").onclick = function () {
+          location.href = "/aboutme";
+      };
+    </script>
+    <div id="p1">                                 <!--Mission Statement-->
+      <h3 >
+       Hello, Welcome to my project.This project has 5 pages which you should be able to navigate from the top navigation bar.Click on "About me " to go further on this page.
+      </h3>
+    </div>
+    <p style="position: absolute; top:800px; left: 20px; color: rgb(26, 31, 31);">Thank </p>
+    <% } else if (title == "About Me"){%>  <!-- **********************   ABOUT PAGE  *********************** -->
+      
+      <div>
+        
+        
+      </div>
+      <img style="position: absolute; left: 200px; top: 300px;" src="Assets/images/About.png" height="350px" width="300px" />  <!-- my photo-->
+      
+      <a style="position: absolute; left: 650px; top: 680px;" href="Assets/documents/resume.pdf">My Resume </a> </p><!--PDF link-->
+      <p style="position: absolute; left: 650px; top: 300px; font-size: 20px;"><!-- My information-->
+       Hello, my name is Neel Chaudhari. I have more than 2 years of experience in IT field now. I did my computer system technician program from George Brown College. As I was always interested more on Software side, currently I am pursuing software engineering fast track course at Centennial.In my leisure time I love to play Cricket.
+      <br><br> Please find my resume attached below with all my experiences and and the projects I worked on. Apart from software, I do have certification in COMPTia Security+.
+      </p>
+      <p style="position: absolute; top:850px; left: 20px; color: rgb(61, 126, 126);"> thank you </p>
+    <%} else if (title == "Projects"){%>
+    <!-- *********************************   projects page    *********************************************** -->
+      <!--information about first project-->
+      <div class="container">
+        <img class="image" src="Assets/images/Assist.jpg" alt="Image 1">
+        <h2 style="position: absolute; top: 280px; left: 30px; color: rgb(4, 62, 88); text-decoration: underline">Peer-Assist App</h2>
+        <p color: rgb(0,128,128);>I am working on the app called Peer assist which can help students connect to other students in any of the college and help them in the sense of tutoring accomodation, ridesharing and many more.</p>
+      </div>
+      <div class="container">
+        <img class="image" src="Assets/images/park.png" alt="Image 2">
+        <h2 style="position: absolute; top: 680px; left: 30px; color: rgb(4, 62, 88); text-decoration: underline">Go-Park App</h2>
+        <p>Parking app where users can register for the parking and book the spot by staying at their home. They can check the Parking space wherever they are visiting and book the spot before they leave their place.</p>
+      </div>
+      <div class="container">
+        <img class="image" src="Assets/images/sports.png" alt="Image 3">
+        <h2 style="position: absolute; top: 1280px; left: 30px; color: rgb(4, 62, 88); text-decoration: underline">Sports-Connect</h2>
+        <p>Thank you </p>
+      </div>
+  
+    <%} else if (title == "Services"){%>
+<!-- *********************************   service page    *********************************************** -->
+      <h2 style="position: absolute; top: 280px; left: 30px; color: rgb(4, 62, 88); text-decoration: underline">Services </h2>
+      <!--  -->
+      <h2 style="position: absolute; top: 350px; left: 200px; color:darkslateblue ;"> Web Development </h2>
+      <a href="https://github.com/Neelchaudhari98/WebDevelopment_Week1"><img  src="Assets/images/web.png" height="400px" width="400px" style="position: absolute; top:400px; left: 150px;" /></a>
+      <h2 style="position: absolute; top: 350px; left: 900px; color:darkslateblue ;"> Java </h2>
+      <a href="https://github.com/Neelchaudhari98/Java"><img  src="Assets/images/JAVAP.png" height="400px" width="400px" style="position: absolute; top:400px; left: 750px;" /></a>
+      <h2 style="position: absolute; top:  900px;"> thank you</i> </h2>
+    
+    <%} else if (title == "Contact"){%>
+     <!-- *********************************   contact page    *********************************************** -->
+    
+      <div class="container" style="position: absolute; top:280px;">
+        <h2 style="color: rgb(85,128,0)">Contact Details</h2>
+        <div id="panel" class="panel panel-default" >       <!-- panel to show my contact information -->
+          <div class="panel-body">                                
+            <h6> Contact no: +1-647-970-7039</h6>
+            <h6> Email : nchaud42@mycentennialcollege.ca </h6>
+          </div>
+        </div>
+      </div>
+      <h4 style="position: absolute; top: 400px; left: 425px;">Contact Form:</h4><br>
+      <form style="position: absolute; top : 400px; left:400px; width: 600px ; height: 400px; " action="/home">
+        <!-- create form to send message -->
+        <label for="fname">  First Name:  </label><br>
+        <input style=" width: 550px; "type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+    
+        <label for="lname">  Last Name: </label><br>
+        <input style=" width: 550px;" type="text" id="lname" name="lastname" placeholder="Your last name..."><br>
+        <label for="cnumber">  Contact Number: </label><br>
+        <input style=" width: 550px;" type="text" id="cnumber" name="contactno" placeholder="Your Contact no..."><br>
+        <label for="email">  Email address: </label><br>
+        <input style=" width: 550px;" type="text" id="mail" name="email" placeholder="Your email..."><br>
+        <label for="msg">Your Query: </label><br>
+        <textarea id="mdg" name="message" placeholder="Write your query here" style="height:100px; width: 550px;" ></textarea><br>
+        <button type="submit" href="/">Submit</button>
+      </form>
+      <h2 style="position: absolute; top:  900px;"> thank you</i> </h2>
+     <%}%>
+<!-- *********************************   contact page    *********************************************** -->

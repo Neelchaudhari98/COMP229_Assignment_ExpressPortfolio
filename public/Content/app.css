@@ -1,0 +1,63 @@
+/* Custom css goes here*/
+
+/*
+File name: app.css
+Student's Name: Neel Chaudhari
+StudentID: 301345109
+Date: February 8,2023
+*/
+
+#b1{                /* css modification for button in home page */
+    display: flexbox;
+    position:absolute;
+    right: 700px;
+    top: 450px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: grey;
+}
+
+#p1{            /* css modification for mission statement in home page */
+    background-color: rgb(133, 152, 173);
+    padding: 30px;
+    margin: 50px;
+    position: absolute;
+    left: 15px;
+    top: 210px;
+    border-radius: 30px;
+}
+h4 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #351a1d;
+    }
+
+    form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        text-align: center;
+      }
+      
+      image {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        margin: 0;
+      }
+      .display-4{
+        background-color: rgb(74, 140, 161);
+        padding: 20px;
+      }
+     
